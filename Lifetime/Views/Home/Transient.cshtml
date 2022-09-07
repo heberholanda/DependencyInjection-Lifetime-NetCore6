@@ -1,0 +1,11 @@
+﻿@model int
+@{
+    ViewData["Title"] = "Transient";
+}
+<h1>@ViewData["Title"]</h1>
+
+<div class="text-center">
+    <h1 class="display-4">Transient Random number: @Model</h1>
+
+    <partial name="Lifetime/_Transient" />
+</div>

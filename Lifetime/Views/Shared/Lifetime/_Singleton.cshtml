@@ -1,0 +1,9 @@
+﻿@using Lifetime.Interfaces
+@inject ISingletonService Singleton
+
+<h3>Singleton from the Partial: @Singleton.GetRandomNumber()</h3>
+
+<p>The numbers are the same, even if the request is made by different places. Singleton will only create a single instance.</p>
+
+<p><b>Lifetime:</b> Criado no primeiro request ou pelo ConfigureServices</p>
+<p><b>Cases:</b> Caching Services, Global Configurations</p>

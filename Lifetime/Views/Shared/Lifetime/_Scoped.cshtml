@@ -1,0 +1,9 @@
+﻿@using Lifetime.Interfaces
+@inject IScopedService Scoped
+
+<h3>Scoped from the Partial: @Scoped.GetRandomNumber()</h3>
+
+<p>Both numbers are the same and every page refresh we get a new one. The <b>Scoped</b> is initialized for each request.</p>
+
+<p><b>Lifetime:</b> Create once per request.</p>
+<p><b>Cases:</b> Persisting state per request.</p>

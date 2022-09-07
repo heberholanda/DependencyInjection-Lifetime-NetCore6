@@ -1,0 +1,11 @@
+﻿@model int
+@{
+    ViewData["Title"] = "Singleton";
+}
+<h1>@ViewData["Title"]</h1>
+
+<div class="text-center">
+    <h1 class="display-4">Singleton Random number: @Model</h1>
+
+    <partial name="Lifetime/_Singleton" />
+</div>

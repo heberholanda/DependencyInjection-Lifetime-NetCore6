@@ -1,0 +1,9 @@
+﻿@using Lifetime.Interfaces
+@inject ITransientService Transient
+
+<h3>Transient from the Partial: @Transient.GetRandomNumber()</h3>
+
+<p>The numbers obtained are different. Whenever a request is made, a new value will be generated.</p>
+
+<p><b>Lifetime:</b> Created each time they are requested. This lifetime works best for lightweight, stateless services.</p>
+<p><b>Cases:</b> File Access, Database Access</p>
